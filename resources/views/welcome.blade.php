@@ -84,7 +84,7 @@
 
                 <div class="links">
                     <a href="{{ route('peoples.create')}}">Registrar Persona</a>
-                    <a href="">Listado de Personas </a>                    
+                                      
                     <a href="{{ route('requests.create')}}">Realizar una Solicitud</a>
 
 
