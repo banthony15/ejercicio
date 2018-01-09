@@ -15,7 +15,14 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        $peoples = People::orderBy('id', 'DESC')->paginate();
+
+        // $peoples = People::select('peoples.*')
+        // ->join('rferences', 'rferences.id', '=', 'peoples.sexo_id')
+        // ->orderBy('id', 'DESC')
+        // ->paginate();
+
+        $peoples = People::all();
+
         return view('peoples.index', compact('peoples'));
     }
 
@@ -57,7 +64,7 @@ class PeopleController extends Controller
         $peoples->save();
 
         //echo "datos guardados";
-        return redirect()->route('peoples.create');
+        return redirect()->route('peoples.index');
     }
 
     /**

@@ -17,7 +17,15 @@ class People extends Model
 
     {
 
-    	return $this->belongsTo('App\Reference');
+    	return $this->belongsTo('App\Reference', 'status_id', 'id');
+
+    }
+
+        public function referenceSexo()
+
+    {
+
+    	return $this->belongsTo('App\Reference', 'sexo_id', 'id');
 
     }
 }

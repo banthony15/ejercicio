@@ -16,11 +16,10 @@ class CreateRferencesTable extends Migration
         Schema::create('rferences', function(Blueprint $table) {
             $table->engine = 'InnoDB';
         
-            $table->integer('id');
+            $table->increments('id');
             $table->string('descripcion', 45);
-            $table->integer('references_id')->unsigned()->nullable();
-            
-            $table->primary('id');
+            $table->integer('references_id')->unsigned()->nullable();            
+
         
        
             $table->foreign('references_id')

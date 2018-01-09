@@ -7,7 +7,7 @@
 		<div class="col-md-12 col-md-offset-0" >
 	 		<form  class="form-horizontal" action="{{ route('peoples.store') }}" method="post">
 	 		{{ csrf_field() }}		
-			 	<div class= "panel panel-purple" >
+			 	<div class= "panel panel-primary" >
 			 		<div class= "panel-heading">
 			 			<h3 class= "panel-title fa fa-user"> Datos Basicos</h3>
 			 		</div>
@@ -72,25 +72,17 @@
 							</div>							
 					</div>
 
-		 		</div>
-		 	</div>
-			
-
-	<select class="js-example-basic-single" name="state">
-  <option value="AL">Alabama</option>
-    ...
-  <option value="WY">Wyoming</option>
-</select>
-
-
-					<div class="col-sm-offset-6">
+					<div class="col-sm-offset-5">
 						<input type="submit" value="Registrar" class="btn btn-primary">
 					</div>
 
-			</form>
+		 		</div>
+		 	</div>
+		 </form>
 		</div>
 	</div>
 </div>
+
 @endsection
 
 

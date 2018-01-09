@@ -12,7 +12,8 @@
 				<tr>
 					<th width="20px">ID</th>
 					<th>Cedula</th>
-					<th>Nombre y Apellido del Funcionario</th>				
+					<th>Nombre y Apellido del Funcionario</th>
+					<th>status</th>			
 					<th >Acciones</th>					
 				</tr>
 
@@ -21,12 +22,20 @@
 				@foreach($peoples as $peoples)
 				<tr>
 					<td> {{$peoples->id}} </td>
+					<td>{{$peoples->cedula}}</td>
 
 					<td>
 						<strong> {{$peoples->name_1}} </strong>
-						<strong> {{$peoples->name_1}} </strong>
+						<strong> {{$peoples->name_2}} </strong>
+						<strong> {{$peoples->lastname_1}} </strong>
+						<strong> {{$peoples->lastname_2}} </strong>
 					</td>
 					<td>
+						{{$peoples->Reference->descripcion}}
+					</td>
+					<td>
+
+						{{ $peoples->referenceSexo->descripcion}}
 
 					</td>
 				</tr>		
