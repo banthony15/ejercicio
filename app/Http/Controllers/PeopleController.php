@@ -15,7 +15,8 @@ class PeopleController extends Controller
      */
     public function index()
     {
-
+        $peoples = People::orderBy('id', 'DESC')->paginate();
+        return view('peoples.index', compact('peoples'));
     }
 
     public function create()
