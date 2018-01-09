@@ -11,9 +11,11 @@ class People extends Model
 	
     protected $fillable = [
     	'cedula','credencial','name_1','name_2','lastname_1','lastname_2','sexo_id','status_id',
-    ];
+    	    ];
 
-    public function Reference()
+
+
+    public function referenceStatus()
 
     {
 
@@ -28,4 +30,7 @@ class People extends Model
     	return $this->belongsTo('App\Reference', 'sexo_id', 'id');
 
     }
+
+
+    
 }

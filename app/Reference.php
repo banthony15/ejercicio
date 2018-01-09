@@ -17,7 +17,7 @@ class Reference extends Model
     public function People(){
 
 
-        // return $this->hasMany('App\People', 'status_id', 'id');
+       	 // return $this->hasMany('App\People', 'status_id', 'id');
 
     }
 }
