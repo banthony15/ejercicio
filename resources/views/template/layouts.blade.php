@@ -61,6 +61,6 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('AdminLTE-2.4.2/dist/js/pages/dashboard2.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{asset('AdminLTE-2.4.2/dist/js/demo.js')}}"></script>
+{{-- <script src="{{asset('AdminLTE-2.4.2/dist/js/demo.js')}}"></script> --}}
 </body>
 </html>

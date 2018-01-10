@@ -6,11 +6,18 @@
 
 
 
-{{-- @section('content')
+@section('content')
+
+
+<ol class="breadcrumb">
+  <li class="fa fa-home"><a href="{{route('home')}}">Home</a></li>
+  <li class="fa fa-user"><a href="#">Gestion</a></li>
+  <li class="fa fa-new">Nuevo Registro</li>
+</ol>
 
 <div id="page-wrapper">
 	<div class= "container ">
-		<div class="col-md-12 col-md-offset-0" >
+		<div class="col-md-10 col-md-offset-1" >
 	 		<form  class="form-horizontal" action="{{ route('peoples.store') }}" method="post">
 	 		{{ csrf_field() }}		
 			 	<div class= "panel panel-primary" >
@@ -91,4 +98,3 @@
 
 @endsection
 
- --}}

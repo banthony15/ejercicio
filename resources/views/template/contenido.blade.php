@@ -1,15 +1,15 @@
  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    
 
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
+        
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          
+           @yield('content')
         </div>
         <!-- ./col -->
       </div>
@@ -27,44 +27,7 @@
               <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
             </div>
           </div>
-          <!-- /.nav-tabs-custom -->
 
-          
-          <!-- TO DO List -->
-         
-            <!-- /.box-header -->
-           
-          <!-- /.box -->
-
-          <!-- quick email widget -->
-         
-              <!-- /. tools -->
-           
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
-
-          <!-- Map box -->
-              <!-- /. tools -->
-
-            <!-- /.box-body-->
-                <!-- ./col -->
-                <!-- ./col -->
-                <!-- ./col -->
-              <!-- /.row -->
-          <!-- /.box -->
-
-          <!-- solid sales graph -->
-   <!-- /.box-body -->
-          <!-- ./col -->
-              <!-- /.row -->
-            <!-- /.box-footer -->
-          <!-- /.box -->
-
-          <!-- Calendar -->
-              <!-- /. tools -->
-            <!-- /.box-header -->
-              <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
             </div>
 
 
