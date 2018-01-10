@@ -1,6 +1,12 @@
-@extends('layouts.app')
+@extends('template.footer')
+@extends('template.aside')
+@extends('template.contenido')
+@extends('template.header')
+@extends('template.layouts')
 
-@section('content')
+
+
+{{-- @section('content')
 
 <div id="page-wrapper">
 	<div class= "container ">
@@ -85,8 +91,4 @@
 
 @endsection
 
-
-@section('script')
-
-<script src="{{ asset('js/ajax/script.js') }}"></script>
-@endsection
+ --}}
