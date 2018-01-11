@@ -107,7 +107,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{route('peoples.create')}}"><i class="fa fa-user-plus"></i> Nuevo Registro</a></li>
-            <li><a href="{{route('peoples.index')}}"><i class="fa fa-circle-o"></i> Funcionarios Registrados</a></li>
+            <li><a href="{{route('peoples.index')}}"><i class="fa fa-search"></i> Funcionarios Registrados</a></li>
           </ul>
         </li>
         <li class="treeview">
